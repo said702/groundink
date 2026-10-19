@@ -1,0 +1,28 @@
+# Keep the repository focused on the Flutter app and its documentation.
+/*
+!/.gitignore
+!/README.md
+!/logo/
+!/frontend/
+
+# Ship only the model assets used by the app.
+/frontend/assets/models/*.onnx
+!/frontend/assets/models/word_detection_model.onnx
+!/frontend/assets/models/char_model_nano_704.onnx
+/frontend/assets/demo_camera.png
+
+# Local data, experiments, screenshots, and generated artifacts.
+/mock_camera/
+/workflow_screenshots/
+/groundink_red_variants/
+/handoff/
+/nano_modell/
+/backend/
+/Character_Modell/
+/Word_Modell/
+/*.png
+/*.jpg
+/*.log
+/*.xml
+/*.ps1
+/*.bat
