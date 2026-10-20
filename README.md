@@ -2,9 +2,9 @@
   <img src="logo/groundink.png" alt="GroundInk" width="720">
 </p>
 
-<h1 align="center">groundInk</h1>
+<h1 align="center">groundink</h1>
 
-GroundInk is a Flutter app for handwritten English spelling feedback. It detects
+Groundink is a Flutter app for handwritten English spelling feedback. It detects
 words and characters in a photo, compares the recognized words with an English
 dictionary, and grounds spelling feedback in the original handwriting.
 
