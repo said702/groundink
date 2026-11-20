@@ -27,8 +27,8 @@ dictionary, and grounds spelling feedback in the original handwriting.
 
 The app bundles two ONNX models in `frontend/assets/models/`:
 
-- YOLO26n Nano word detection (640 x 640 input).
-- YOLO26n Nano character detection (256 x 256 input).
+- YOLO26n Nano word detection (640 x 640 input), trained on the IAM dataset.
+- YOLO26n Nano character detection (256 x 256 input), trained on the CharLoc dataset.
 
 A spelling model is included for spelling lookup and correction
 suggestions: an English word list with word frequencies and word-pair
@@ -95,3 +95,39 @@ logo/                     Repository logo used above
 
 See [`frontend/OFFLINE_MODELS.md`](frontend/OFFLINE_MODELS.md) for model and
 runtime details.
+
+
+
+## Citation
+
+If you use GroundInk, please cite the following paper:
+
+```bibtex
+@InProceedings{YasinZesch2026CALL,
+  author    = {Yasin, Said and Zesch, Torsten},
+  title     = {Making Feedback Visible: Character-Level Error Localization in Handwritten {CALL} Input},
+  booktitle = {Proceedings of the 15th Workshop on Natural Language Processing for Computer Assisted Language Learning},
+  year      = {2026},
+  month     = nov,
+  address   = {Gothenburg, Sweden},
+  publisher = {University of Tartu Library},
+  pages     = {34--39},
+  isbn      = {978-9985-4-1522-1},
+  url       = {https://aclanthology.org/2026.nlp4call-1.3/}
+}
+```
+
+For the CharLoc dataset and the character localization models trained on it, please also cite:
+
+```bibtex
+@Article{YasinZesch2026,
+  author    = {Yasin, Said and Zesch, Torsten},
+  title     = {Accurate localization of characters in handwritten words},
+  journal   = {International Journal on Document Analysis and Recognition},
+  year      = {2026},
+  publisher = {Springer},
+  note      = {In press},
+  doi       = {10.1007/s10032-026-00611-8},
+  url       = {https://doi.org/10.1007/s10032-026-00611-8}
+}
+```
